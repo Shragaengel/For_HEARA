@@ -1,0 +1,24 @@
+  heara-project
+cd heara-project
+
+mkdir heara-project
+cd heara-project
+
+mkdir backend
+cd backend
+npm init -y
+
+npm install express mongoose dotenv cors
+npm install --save-dev nodemon
+
+mkdir models
+
+New-Item server.js -ItemType File
+New-Item .env -ItemType File
+New-Item models\Product.js -ItemType File
+New-Item models\Lead.js -ItemType File
+
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+
+npm run dev
